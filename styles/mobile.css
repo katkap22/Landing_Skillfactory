@@ -1,0 +1,64 @@
+/* @media screen and (max-width: 1300px) and (min-width:768px) {} */
+body {
+    max-width: 375px;
+    font-size: 14px;
+    line-height: 135.84%;
+}
+
+.button {
+    box-shadow: none;
+    width: 100%;
+}
+
+.title {
+    font-size: 23px;
+    line-height: 132.83%;
+}
+
+.container {
+    max-width: 339px;    
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    height: 57px;
+}
+
+.header-content > nav, .header-content > button {
+    display: none;
+}
+
+.phone {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hero {
+    background-image: url('../images/hero_mobile.jpg');
+    background-size: cover;
+    height: 476px;
+    padding-top: 85px;
+}
+
+.hero-container {
+    padding-left: 0;
+}
+
+.main-text {
+    margin-top: 16px;
+    width: 339px;
+    text-align: left;
+    letter-spacing: 1px;
+}
+
+.container-button {
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 49px;
+    height: 128px;
+}
+
+.button-transparent {
+    margin-left: 0px;
+}

@@ -1,0 +1,168 @@
+@font-face {
+    font-family: 'Yeseva One';
+    src: url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+}
+
+@font-face {
+    font-family: 'Nunito Sans';
+    src: url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap');
+}
+
+body {
+    max-width: 1440px;
+    margin: 0;
+    font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1256px;
+    margin:0 auto;
+}
+
+.button {
+    background: #E3B873;
+    box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+    border-radius: 2px;
+    outline: 0;
+    border: 0;
+    color: white;
+    font-style: italic;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: center;
+    text-transform: uppercase;
+    height: 51px;
+}
+
+.button-header {
+    width: 161px;
+    height: 37px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+}
+
+.button-main {
+    width: 207px;
+    height: 51px;
+    padding-top: 19px;
+    padding-bottom: 20px;
+}
+
+.title {
+    margin: 0;
+    font-family: 'Yeseva One', 'Times New Roman', Times, serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 53px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.header {
+    background: black;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    height: 83px;
+    align-items: center;
+}
+
+.logo {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-transform: uppercase;
+    color: #E3B873;
+}
+
+.header-navigation {
+    list-style: none;
+    display: flex;
+}
+
+.header-navigation__item {
+    margin-right: 47px;
+}
+
+.header-navigation__item a {
+    text-decoration: none;
+    color: white;
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 15px;
+    letter-spacing: 0em;
+    text-align: left;
+}
+
+.header-navigation__item a:hover {
+    color: #E3B873;
+}
+
+.phone {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 11px;
+    line-height: 15px;
+    text-align: right;
+    color: #E3B873;
+}
+
+.hero {
+    background-image: url('../images/hero.jpg');
+    background-size: cover;
+    height: 707px;
+    padding-top: 194px;
+    
+    position: relative;
+}
+
+.hero-overlay {
+    content:'';
+    position:absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.hero-container {
+    padding-left: 42px;
+    position: relative;
+    z-index: 1;
+}
+
+.main-title span {
+    color: #E3B873;
+}
+
+.main-text {
+    margin-top: 19px;
+    width: 504px;
+    text-align: justify;
+}
+
+.container-button {
+    display: flex;
+    margin-top: 22px;
+}
+
+.button-transparent {
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    margin-left: 20px;
+}
