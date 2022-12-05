@@ -59,6 +59,12 @@ body {
     height: 128px;
 }
 
+.container-button span {
+    display: none;
+}
+
 .button-transparent {
     margin-left: 0px;
 }
+
+
