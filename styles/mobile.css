@@ -41,18 +41,22 @@ body {
     padding-top: 85px;
 }
 
-.hero-container {
+.hero-content {
     padding-left: 0;
 }
 
-.main-text {
+.hero__title {
+    width: 330px;
+}
+
+.hero__text {
     margin-top: 16px;
     width: 339px;
     text-align: left;
     letter-spacing: 1px;
 }
 
-.container-button {
+.hero__buttons {
     flex-direction: column;
     justify-content: space-between;
     margin-top: 49px;
