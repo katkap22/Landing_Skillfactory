@@ -1,12 +1,5 @@
-@font-face {
-    font-family: 'Yeseva One';
-    src: url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
-}
-
-@font-face {
-    font-family: 'Nunito Sans';
-    src: url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap');
-}
+@import url('https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap');
 
 body {
     max-width: 1440px;
@@ -44,7 +37,7 @@ body * {
     height: 51px;
 }
 
-.button-header {
+.button-header, .button-footer {
     width: 161px;
     height: 37px;
     padding-top: 13px;
@@ -69,16 +62,20 @@ body * {
     color: #FFFFFF;
 }
 
-/* ---------------------header-------------------------------------- */
-.header {
+/* ---------------------header and footer-------------------------------------- */
+.header, .footer {
     background: black;
 }
 
-.header-content {
+.header-content, .footer-content {
     display: flex;
     justify-content: space-between;
     height: 83px;
     align-items: center;
+}
+
+.footer-content {
+    height: 133px;
 }
 
 .logo {
@@ -95,11 +92,14 @@ body * {
     display: flex;
 }
 
-.header-navigation__item {
-    margin-right: 47px;
+.header-navigation, .footer-navigation {
+    padding-left: 67px;
+}
+.header-navigation__item, .footer-navigation__item {
+    margin-right: 52px;
 }
 
-.header-navigation__item a {
+.header-navigation__item a, .footer-navigation__item a {
     text-decoration: none;
     color: white;
     font-size: 11px;
@@ -110,6 +110,10 @@ body * {
 }
 
 .header-navigation__item a:hover {
+    color: #E3B873;
+}
+
+.footer-navigation__item a:hover {
     color: #E3B873;
 }
 
@@ -217,7 +221,7 @@ body * {
     color: #E3B873;
     border-bottom:1px #E3B873 solid;
 }
-/* больше по высоте на 10,62px надо разобраться почему */
+
 .completed__main-block { 
     display: flex;
     justify-content: space-between;
@@ -311,4 +315,128 @@ body * {
 .completed__text__arrow .active {
     background-color: white;
     border-radius:50%;
+}
+
+/* ----------------------control------------------- */
+.control {
+    width: 817px;
+    height: 955.15px;
+    margin: -326px auto 147.85px auto;
+}
+
+.subtitle {
+    text-align:center;
+}
+
+.subtitle__text {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 13px;
+}
+
+.subtitle__flex-container {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    margin-bottom: 31.21px;
+}
+
+.centerElem {
+    margin-right: 8px;
+    margin-left: 9px;
+}
+
+.control__image {
+    width: 817px;
+    height: 434px;
+    background-image: url('../images/video-bg.jpg');
+    filter: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.15));
+    background-size: cover;
+    position: relative;
+}
+
+.control__image img {
+    position:absolute;
+    top: 50%;
+    left:50%;
+    margin-left: -72px;
+    margin-top: -69px;
+}
+
+.label {
+    cursor: pointer;
+}
+
+.checkbox {
+    display: none;
+}
+
+.fake {
+    display: inline-flex;
+    width: 18px;
+    height: 18px;
+    background: #E3B873;
+    color: #fff;
+    justify-content: center;
+}
+
+.fake::before {
+    content: "\2714";
+    opacity: 0;
+    transition: .2s;
+}
+
+.checkbox:checked + .fake::before {
+    opacity: 1;
+}
+
+/* --------------------types-------------------------------- */
+.text {
+    font-size: 14px;
+    line-height: 163.68%;
+/* or 23px */
+    color: #181818;
+}
+
+.subtitle__text-color {
+    color: #000;
+}
+
+.types__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.types__subtitle {
+    font-size: 18px;
+    line-height: 25px;
+    color:  #363636;
+}
+
+.types__image {
+
+    margin-bottom: -127px;
+}
+
+.types__row__item__text {
+    margin-right: 31px;
+    margin-left:31px;
+    padding-left: 34px;
+    background-color: rgb(31, 161, 27);
+}
+
+.types__row__item__text li {
+    font-size: 13px;
+    line-height: 27px;
+    color: #959595;
+}
+
+.price {
+    width: 228px;
+    height: 54px;
+    background: #E3B873;
+    box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+    padding: 17px 21.44px;
+    font-size: 18px;
+    line-height: 25px;
 }
