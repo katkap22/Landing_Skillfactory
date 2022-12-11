@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" media="screen and (max-width: 1299px)" href="./styles/mobile.css">
-    <title>Landing_step1</title>
+    <title>Landing</title>
 </head>
 <body>
     <header class="header">
@@ -42,12 +42,12 @@
                     <div class="button button-main button-transparent"><span>SUBMIT YOUR </span>APPLICATION</div>
                 </div>
             </div>
-            <div class="hero-overlay"></div>
+            <div class="overlay"></div>
         </section>
         <section class="completed">
             <div class="container completed-content">
                 <ul  class="navigation completed-navigation">
-                    <li class="completed-navigation__item active"">Rostov-on-Don, Admiral</li>
+                    <li class="completed-navigation__item active">Rostov-on-Don, Admiral</li>
                     <li class="completed-navigation__item">Sochi Thieves</li>
                     <li class="completed-navigation__item">Rostov-on-Don Patriotic</li>
                 </ul>
@@ -81,11 +81,14 @@
                                 <div>Upon request</div>
                             </div> 
                         </div>
-                        <div class="completed__text__arrow">
+                        <div class="completed__text__arrows">
                             <img src="./images//icons/left.svg" alt="arrow on the left" class="arrow-left">
-                            <img src="./images/icons/dot.svg" alt="dot" class="dot1 active">
-                            <img src="./images/icons/dot.svg" alt="dot" class="dot2">
-                            <img src="./images/icons/dot.svg" alt="dot" class="dot3">
+                            <!-- <img src="./images/icons/dot.svg" alt="dot" class="dot1 active"> -->
+                            <div class="dot active"></div>
+                            <!-- <img src="./images/icons/dot.svg" alt="dot" class="dot2"> -->
+                            <div class="dot dot "></div>
+                            <!-- <img src="./images/icons/dot.svg" alt="dot" class="dot3"> -->
+                            <div class="dot"></div>
                             <img src="./images/icons/right.svg" alt="arrow on the right" class="arrow-right">
                         </div> 
                     </div>
@@ -96,8 +99,8 @@
             </div>
         </section>
         <section class="control">
-            <div class="subtitle">
-                <h3 class="title subtitle__text">
+            <div class="control__subtitle">
+                <h3 class="subtitle subtitle-style">
                     online control
                 </h3>
                 <div class="subtitle__flex-container">
@@ -109,81 +112,184 @@
             <div class="control__image">
                 <img src="./images/icons/video.svg" alt="buttle video">
             </div>
-            <div class="control-text">
-                <div><img src="./images/icons/Rectangle-line.svg" alt="line">
-                </div>
-                <div>
-                    At each facility, a camera is installed that broadcasts the progress of work on the clock. At any time, you can go to our website and monitor the progress of work in your apartment. You can watch the live broadcast from one of our facilities!
-                    Leave a request below and you will receive a link to the broadcast.s 
-                </div>
-                <div class="control__input">
-                    <form action="#" method="post">
-                        <label for="name">Name</label>
-                        <input type="text" name="name" placeholder="What is your name:">
-                        <label for="phone">Phone</label>
-                        <input type="tel" name="phone" placeholder="Your phone number:">
-                        <button type="submit">Submit</button>
-                    </form>
-                </div>
-                <div class="control__checkbox">
-                    <label class="label">
-                        <input type="checkbox" class="checkbox">
-                        <span class="fake"></span>
-                        <span class="text">I agree to the processing of personal data</span>
-                    </label>
-                </div>
+            <div class="control__text">
+                <hr>
+                <p>
+                    At each facility, a camera is installed that broadcasts the progress of work on the clock. 
+                    At any time, you can go to our website and monitor the progress of work in your apartment. 
+                    You can watch the live broadcast from one of our facilities!
+                    <br>Leave a request below and you will receive a link to the broadcast.
+                </p>
+            </div>
+            <form action="#" method="post" class="control__form">
+                <label for="name">Name
+                    <input type="text" id="name" placeholder="What is your name:">
+                </label>
+                <label for="phone">Phone
+                    <input type="tel" id="phone" placeholder="Your phone number:">
+                </label>
+                <button type="submit" class="button button-form">Submit</button>
+            </form>
+            <div class="control__checkbox">
+                <label class="label">
+                    <input type="checkbox" class="checkbox">
+                    <span class="fake"></span>
+                    I agree to the processing of personal data
+                </label>
+            </div>
             </div>
         </section>
         <section class="types">
-            <div class="subtitle">
-                <h3 class="title subtitle__text subtitle__text-color">
-                    TYPES OF REPAIR
-                </h3>
-                <div class="subtitle__flex-container">
-                    <img src="./images/icons/line.svg" alt="line">
-                    <img src="./images/icons/tools.svg" alt="tools" class="tools">
-                    <img src="./images/icons/line.svg" alt="line">
-                </div>
-            </div>
-            <div class="types__row">
-                <div class="types__row__item">
-                    <div class="types__image">
-                        <img src="./images/Redecorating.jpg" alt="Redecorating">
-                    </div>
-                    <div class="types__row__item__text">
-                        <h4 class="title types__subtitle">Redecorating</h4>
-                        <ul>
-                            <li>Dismantling of old coatings</li>
-                            <li>Wallpapering</li>
-                            <li>Painting walls and ceilings</li>
-                            <li>Laying flooring</li>
-                            <li>Replacing plumbing</li>
-                            <li>Replacing sockets and switches</li>
-                            <li>Replacing doors</li>
-                        </ul>
-                        <div class="price title">from 900 rub / m2</div>
+            <div class="container">
+                <div>
+                    <h3 class="subtitle subtitle__style-types">
+                        TYPES OF REPAIR
+                    </h3>
+                    <div class="subtitle__flex-container">
+                        <img src="./images/icons/line.svg" alt="line">
+                        <img src="./images/icons/tools.svg" alt="tools" class="tools">
+                        <img src="./images/icons/line.svg" alt="line">
                     </div>
                 </div>
-                <div class="types__row__item">
-                    <div class="types__image">
-                        <img src="./images/Overhaul.jpg" alt="Overhaul">
-                    </div>
-                    <div class="types__row__item__text">
-                        <h4 class="title types__subtitle">Overhaul</h4>
-                        <div class="list">
-                            <img src="./images/icons/list.svg" alt="list">
+                <div class="types__row">
+                    <div class="types__row__item">  
+                        <div class="types__image">
+                            <img src="./images/Redecorating.jpg" alt="Redecorating">
                         </div>
-                        <div class="price title">from 1800 rub / m2</div>
+                        <div class="types__row__item__text">
+                            <h4 class="title types__subtitle">Redecorating</h4>
+                            <ul>
+                                <li>Dismantling of old coatings</li>
+                                <li>Wallpapering</li>
+                                <li>Painting walls and ceilings</li>
+                                <li>Laying flooring</li>
+                                <li>Replacing plumbing</li>
+                                <li>Replacing sockets and switches</li>
+                                <li>Replacing doors</li>
+                            </ul>
+                            <div class="price title">from 900 rub / m2</div>
+                        </div>
+                    </div>
+                    <div class="types__row__item">
+                        <div class="types__image">
+                            <img src="./images/Overhaul.jpg" alt="Overhaul">
+                        </div>
+                        <div class="types__row__item__text">
+                            <h4 class="title types__subtitle">Overhaul</h4>
+                            <ul>
+                                <li>Dismantling of old coatings</li>
+                                <li>Wallpapering</li>
+                                <li>Painting walls and ceilings</li>
+                                <li>Laying flooring</li>
+                                <li>Replacing plumbing</li>
+                                <li>Replacing sockets and switches</li>
+                                <li>Replacing doors</li>
+                            </ul>
+                            <div class="price title">from 1800 rub / m2</div>
+                        </div>
+                    </div>
+                    <div class="types__row__item">
+                        <div class="types__image">
+                            <img src="./images/Designer.jpg" alt="Designer Repair">
+                        </div>
+                        <div class="types__row__item__text">
+                            <h4 class="title types__subtitle">Designer Repair</h4>
+                            <ul>
+                                <li>Dismantling of old coatings</li>
+                                <li>Wallpapering</li>
+                                <li>Painting walls and ceilings</li>
+                                <li>Laying flooring</li>
+                                <li>Replacing plumbing</li>
+                                <li>Replacing sockets and switches</li>
+                                <li>Replacing doors</li>
+                            </ul>
+                            <div class="price title">from 4000 rub / m2</div>
+                        </div>
+                    </div>   
+                </div>
+                <div class="measurer">
+                    <div class="measurer__flex-row">
+                        <div class="measurer__flex-column">
+                            <div class="measurer__flex-column__flex-item-row">
+                                <div class="style title">01</div>
+                                <div class="measurer__text">Our specialist will arrive for measurements per day
+                                    contact, or appoint a date convenient for yous</div>
+                            </div>
+                            <div class="measurer__flex-column__flex-item-row">
+                                <div class="style title">02</div>
+                                <div class="measurer__text">Free metering</div>
+                            </div>
+                            <div class="measurer__flex-column__flex-item-row">
+                                <div class="style title">03</div>
+                                <div class="measurer__text">Free consultation</div>
+                            </div>
+                            <div class="measurer__flex-column__flex-item-row">
+                                <div class="style title">04</div>
+                                <div class="measurer__text">Get a cost estimate and<br>
+                                    the timing of your future repairs</div>
+                            </div>
+                        </div>
+                        <div class="measurer__form">
+                            <p>Leave a request for free<br>
+                                departure of the measurer</p>
+                            <form action="#"  method="post">
+                                <label>Name</label>
+                                <input type="text" name="name" placeholder="What is your name:">
+                                <label>Phone</label>
+                                <input type="tel" name="phone" placeholder="Your phone number:">
+                                <label>Email</label>
+                                <input type="email" name="email" placeholder="Your email">
+                                <label class="label measurer__checkbox">
+                                    <input type="checkbox" class="checkbox">
+                                    <span class="fake"></span>
+                                    <span class="text">I agree to the processing of personal data</span>
+                                </label>
+                                <button class="button measurer__button" type="submit">Call the measurer</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="piggy_bank">
+                        
+                            <img src="./images/icons/piggy_bank.svg" alt="piggy_bank">
+                        
+                         
+                        <p>Help save 10 - 20% of the 
+                        cost of materials</p>
                     </div>
                 </div>
-                <div class="types__row__item">
-                    <div class="types__image">
-                        <img src="./images/Designer.jpg" alt="Designer Repair">
-                    </div>
-                </div>
-                
             </div>
         </section>
+        <section class="fantasies">
+            <div class="container fantasies-content">
+                <div class="fantasies__flex-row">
+                    <div class="fantasies__flex-column fantasies__column1">
+                        <h4 class="subtitle">We realize your
+                            wildest fantasies</h4>
+                        <ul>
+                            <li>American classic</li>
+                            <li>Empire</li>
+                            <li>Classical</li>
+                            <li>Loft</li>
+                            <li>Minimalism</li>
+                            <li>Provence</li>
+                            <li>Romanticism</li>
+                            <li>Scandinavian style</li>
+                            <li>Mediterranean style</li>
+                            <li>High tech</li>
+                            <li>Eclecticism</li>
+                        </ul>
+                    </div>
+                    <div class="fantasies__flex-column fantasies__column2">
+                        <img src="./images/column2_image1.jpg" alt="foto1">
+                        <img src="./images/column2_image2.jpg" alt="foto2">
+                    </div>
+                    <div class="fantasies__flex-column fantasies__column3">
+                        <img src="./images/column3_image1.jpg" alt="foto3">
+                        <img src="./images/column3_image2.jpg" alt="foto4">
+                    </div>
+                </div>
+            </div>
+            <div class="overlay"></div>
     </main>
     <footer class="footer">
         <div class="container footer-content">
@@ -198,7 +304,7 @@
                     <li class="footer-navigation__item"><a href="#">CONTACTS</a></li>
                 </ul>
             </nav>
-            <a href="tel:+7 (928) 768-32-39" class="phone">+7 (928) 768-32-39</a>
+            <a href="tel:+79287683239" class="phone">+7 (928) 768-32-39</a>
             <button class="button button-footer">Request a call</button>
         </div>
     </footer>
