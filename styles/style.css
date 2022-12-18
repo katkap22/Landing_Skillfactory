@@ -355,10 +355,8 @@
     --basic: #E3B873;
 }
 
-/* @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap'); */
-
 body {
-    max-width: 1440px;
+    /* max-width: 1440px; */
     font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
     font-style: normal;
     font-weight: 400;
@@ -928,6 +926,7 @@ label.label {
 
 .measurer__flex-row {
     display: flex;
+    justify-content: flex-end;
 }
 
 .measurer__flex-column {
@@ -1044,7 +1043,7 @@ label.label-white {
     width: 340px;
     height: 72px;
     margin-top: 20px;
-    margin-left: 846.5px;
+    margin-left: 753px;
 }
 
 .piggy_bank > p {
@@ -1129,14 +1128,11 @@ label.label-white {
     margin-bottom: 83.5px;
 }
 /*---------------------clients--------------- */
-/* .clients { */
-    /* background-image: url('../images/bg-right.jpg'); */
-    /* background-position: 0px -497px; */
-    /* background-size: 53%; */
-    /* } */
-.clients {
-    background-color: black;
+.clients__bg-container {
+    background: url('../images/bg-right.jpg') no-repeat 100% 245px,
+    url('../images/bg-left.jpg') no-repeat 0% 245px;
 }
+
 .clients-content {
     padding:0 20px 224px 20px;
 }
@@ -1219,7 +1215,7 @@ label.label-white {
     width: 883px;
     height: 445px;
     background-color: #000;
-    margin: 0 268.3px 0 288.7px;
+    margin: 0 194px 0 198px;
     position: relative;
     z-index: 1;
 }
@@ -1332,6 +1328,10 @@ label.label-white {
 
 .contacts__map-mobile {
     display: none;
+}
+.contacts__map {
+    width: 925px;
+    margin: 0 auto;
 }
 
 .contacts__map img {

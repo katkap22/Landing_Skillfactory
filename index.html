@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" media="screen and (max-width: 1299px)" href="./styles/mobile.css">
+    <!-- <link rel="stylesheet" media="screen and (min-width: 678px)" href="./styles/mobile_768px.css"> -->
     <link rel="stylesheet" media="screen and (min-width: 2500px)" href="./styles/large.css">
     <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&display=swap" rel="stylesheet">
@@ -106,7 +107,8 @@
             </div>
         </section>
         <section class="control">
-            <div class="control__subtitle">
+            <div class="container">
+                <div class="control__subtitle">
                 <h3 class="subtitle subtitle-style">
                     online control
                 </h3>
@@ -115,11 +117,11 @@
                     <img src="./images/icons/camera.svg" alt="camera" class="centerElem">
                     <img src="./images/icons/line.svg" alt="line">
                 </div>
-            </div>
-            <div class="control__image">
+                </div>
+                <div class="control__image">
                 <img src="./images/icons/video.svg" alt="buttle video">
-            </div>
-            <div class="control__text">
+                </div>
+                <div class="control__text">
                 <hr>
                 <p>
                     At each facility, a camera is installed that broadcasts the progress of work on the clock. 
@@ -127,8 +129,8 @@
                     You can watch the live broadcast from one of our facilities!
                     <br>Leave a request below and you will receive a link to the broadcast.
                 </p>
-            </div>
-            <form action="#" method="post" class="control__form">
+                </div>
+                <form action="#" method="post" class="control__form">
                 <label for="name">Name
                     <input class="input" type="text" id="name" placeholder="What is your name:">
                 </label>
@@ -141,13 +143,14 @@
                     I agree to the processing of personal data
                 </label>
                 <button type="submit" class="button button-form">Submit</button>
-            </form>
-            <div class="control__checkbox">
+                </form>
+                <div class="control__checkbox">
                 <label class="label">
                     <input type="checkbox" class="checkbox">
                     <span class="fake"></span>
                     I agree to the processing of personal data
                 </label>
+                </div>
             </div>
         </section>
         <section class="types">
@@ -221,7 +224,6 @@
                         <div class="price title">from 4000 rub / m2</div>
                     </div>   
                 </div>
-            </div>
                 <div class="measurer">
                     <div class="measurer__flex-row">
                         <div class="measurer__flex-column">
@@ -276,7 +278,8 @@
                         <p>Help save 10 - 20% of the 
                         cost of materials</p>
                     </div>
-                </div>        
+                </div>
+            </div>        
         </section>
         <section class="fantasies">
             <div class="container fantasies-content">
@@ -316,6 +319,7 @@
             <div class="overlay"></div>
         </section>
         <sectiton class="clients">
+            <div class="clients__bg-container">
             <div class="container clients-content">
                 <div>
                     <h3 class="subtitle subtitle__style-types">
@@ -404,51 +408,56 @@
                     </div>
                 </div>
             </div>
+            </div>
         </sectiton>
         <section class="form">
-            <div class="form__form">
-                <p class="subtitle form__form-subtitle">have any questions?</p>
-                <form action="#"  method="post">
-                    <div class="form__form-flex-row">  
-                        <label for="name" class="label-item">Name
-                            <input type="text" id="name" placeholder="What is your name:">
-                        </label>
-                        <label for="phone" class="label-item">Phone
-                            <input type="tel" pattern="\d*" id="phone" placeholder="Your phone number:">
-                        </label>
-                        <label for="question" class="label-item form__form-lastInput">Question
-                            <input type="text" id="question" placeholder="I want to know:">
-                        </label>
-                    </div>
+            <div class="container">
+                <div class="form__form">
+                    <p class="subtitle form__form-subtitle">have any questions?</p>
+                    <form action="#"  method="post">
+                        <div class="form__form-flex-row">  
+                            <label for="name" class="label-item">Name
+                                <input type="text" id="name" placeholder="What is your name:">
+                            </label>
+                            <label for="phone" class="label-item">Phone
+                                <input type="tel" pattern="\d*" id="phone" placeholder="Your phone number:">
+                            </label>
+                            <label for="question" class="label-item form__form-lastInput">Question
+                                <input type="text" id="question" placeholder="I want to know:">
+                            </label>
+                        </div>
 
-                    <label class="label label-white">
-                        <input type="checkbox" class="checkbox">
-                        <span class="fake"></span>
-                        <span class="text">I agree to the processing of personal data</span>
-                    </label>
+                        <label class="label label-white">
+                            <input type="checkbox" class="checkbox">
+                            <span class="fake"></span>
+                            <span class="text">I agree to the processing of personal data</span>
+                        </label>
 
-                    <button class="button form__button" type="submit">submit</button>
-                </form>
-            </div>
+                        <button class="button form__button" type="submit">submit</button>
+                    </form>
+                </div>
+        </div>
         </section>
         <section class="contacts">
-            <div class="contacts__map-mobile">
-                <img src="./images/map-mobile.jpg" alt="map">
-            </div>
-            <div class="contacts__address">
-                <div class="subtitle contacts__subtitle">
-                    Rostov-on-Don, Nansen St., 239  Shopping  Center 
-                    Decorum  Tel <a href="tel:+79287683229">+7 (928) 768 32 29</a>
+            <div class="container">
+                <div class="contacts__map-mobile">
+                    <img src="./images/map-mobile.jpg" alt="map">
                 </div>
-                <div class="contacts__image">
-                    <a href="#"><img src="./images/icons/email.svg" alt="icon-email"></a>
-                    <a href="#"><img src="./images/icons/inst.svg" alt="icon-inst"></a>
+                <div class="contacts__address">
+                    <div class="subtitle contacts__subtitle">
+                        Rostov-on-Don, Nansen St., 239  Shopping  Center 
+                        Decorum  Tel <a href="tel:+79287683229">+7 (928) 768 32 29</a>
+                    </div>
+                    <div class="contacts__image">
+                        <a href="#"><img src="./images/icons/email.svg" alt="icon-email"></a>
+                        <a href="#"><img src="./images/icons/inst.svg" alt="icon-inst"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="contacts__map">
+                <div class="contacts__map">
                 <img src="./images/map_withoutShadow.jpg" alt="map">
+                </div>
+                <div class="overlay contacts-overlay"></div>
             </div>
-            <div class="overlay contacts-overlay"></div>
         </section>
     </main>
     <footer class="footer">

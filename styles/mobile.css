@@ -1,6 +1,6 @@
-/* @media screen and (max-width: 1300px) and (min-width:768px) {} */
+
 body {
-    max-width: 375px;
+    max-width: 100%;
     font-size: 14px;
     line-height: 135.84%;
 }
@@ -16,7 +16,12 @@ body {
 }
 
 .container {
-    max-width: 339px;    
+    max-width: 339px;  
+}
+@media screen and (min-width:768px) {
+    .container {
+        max-width:740px;
+    }
 }
 /* --------------------header--------------------------------- */
 .header-content {
@@ -85,7 +90,8 @@ body {
 }
 
 .completed__text__descr__title {
-    width: 229px;
+    /* width: 229px; */
+    max-width: 100%;
     text-align: center;
     font-size: 22px;
     line-height: 138.6%;
@@ -97,7 +103,8 @@ body {
     line-height: 158.48%;
     text-align: center;
     color: #FFFFFF;
-    width: 339px;
+    /* width: 339px; */
+    width: 100%;
     margin-bottom:72px;
 }
 
@@ -108,8 +115,11 @@ body {
     margin-bottom: 33px;
 }
 
+
+
 .completed__text > .completed-image-mobile {
     display: block;
+    margin: 0 auto;
     width: 339px;
     height: 242px;
     margin-bottom: 36px;
@@ -144,13 +154,18 @@ body {
     display: none;
 }
 
+@media screen and (min-width:768px) {
+    .row1, .row2 {
+    margin: 0 200.5px;
+    }
+}
 
 /*----------------------------control------------------------------ */
 .control {
     background-color: #000;
-    
     height: 827px;
     margin: 0 auto 81px auto;
+    max-width: 100%;
 }
 
 .control__subtitle {
@@ -284,6 +299,7 @@ h3.subtitle-style {
 
 .types__row {
     flex-direction: column;
+    align-items: center;
     margin-left: 0;
     margin-right: 0;
     margin-bottom: 0;
@@ -364,6 +380,10 @@ h3.subtitle-style {
     display: none;
 }
 
+.fantasies__flex-column {
+    margin: 0 auto;
+}
+
 .fantasies__column1 {
     padding-top: 0;
     padding-bottom: 0;
@@ -416,7 +436,7 @@ h3.subtitle-style {
 .form__form {
     width: 339px;
     height: 716px;
-    margin:0 17px 0 18px;
+    margin:0 auto;
     position: static;
     z-index: 0;
 }
@@ -470,6 +490,12 @@ h3.subtitle-style {
 .contacts__map-mobile {
     display: block;
     margin-bottom: 35px;
+}
+
+@media screen and (min-width: 768px) {
+    .contacts__map-mobile {
+        margin: 0 197px 35px;
+    }
 }
 
 .contacts__address {
