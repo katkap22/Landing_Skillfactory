@@ -870,6 +870,10 @@ label.label {
     margin-bottom: 124px;
 }
 
+.types__row__item .mobile {
+    display: none;
+}
+
 .types__row__item__text {
     position: relative;
     margin-top: -138px;
@@ -1125,17 +1129,15 @@ label.label-white {
     margin-bottom: 83.5px;
 }
 /*---------------------clients--------------- */
+/* .clients { */
+    /* background-image: url('../images/bg-right.jpg'); */
+    /* background-position: 0px -497px; */
+    /* background-size: 53%; */
+    /* } */
 .clients {
-    background-color:aquamarine;
-    /* background-image: url('../images/hero.jpg'); */
-    background-size: cover;
-    /* height: 707px; */
-    width: 1440px;
-    /* background-position-x: 50%; */
+    background-color: black;
 }
 .clients-content {
-    /* background-image: url("../images/Group-bg.jpg"); */
-    /* transform: matrix(-1, 0, 0, 1, 0, 0); */
     padding:0 20px 224px 20px;
 }
 
@@ -1211,15 +1213,15 @@ label.label-white {
 
 /* ----------------------form------------------------ */
 .form {
-    background-color:aquamarine;
-    background-image: url('../images/bg-right.jpg');
-    margin-top: -222.66px;
+    margin-top: -224.66px;
 }
 .form__form {
     width: 883px;
     height: 445px;
     background-color: #000;
     margin: 0 268.3px 0 288.7px;
+    position: relative;
+    z-index: 1;
 }
 
 .form__form-subtitle {
@@ -1284,8 +1286,9 @@ label.label-white {
 }
 /* ------------------contacts----------------------------- */
 .contacts {
-    background-color: #000;
-    padding: 275px 260px 66px 255px;
+    background-image: url('../images/bg-contact.jpg');
+    position: relative;
+    padding: 275px 260px 53px 255px;
     margin-top: -222.66px;
 }
 
@@ -1297,6 +1300,8 @@ label.label-white {
     width: 589px;
     height: 105px;
     margin: 0 auto 43.29px;
+    position: relative;
+    z-index: 1;
 }
 
 .contacts__subtitle {
@@ -1332,5 +1337,12 @@ label.label-white {
 .contacts__map img {
     height: 466px;
     text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.contacts-overlay {
+    background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
+
 }
 
